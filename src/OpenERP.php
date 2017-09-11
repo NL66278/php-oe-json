@@ -100,8 +100,10 @@ class OpenERP {
       $params = array();
     else
       $params = $params[0];
+    /**
     if (!array_key_exists("session_id", $params) && isset($this->session_id))
         $params["session_id"] = $this->session_id;
+     */
     return $this->json($this->base  . $url, $params);
   }
 

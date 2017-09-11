@@ -39,7 +39,6 @@ class OpenERP {
         'db' => $this->db,
         'login' => $login,
         'password' => $password,
-        'session_id' => "",
       ));
     $this->session_id = $req['session_id'];
     $this->authenticated = $req["uid"] !== False;
